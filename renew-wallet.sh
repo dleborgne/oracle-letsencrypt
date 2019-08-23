@@ -23,7 +23,7 @@ openssl pkcs12 -export -out ${TMP_DIR}/$(hostname -s).p12 \
 
 # Import PKCS12 content into oracle wallet
 orapki wallet import_pkcs12 -wallet ${ORACLE_HOME}/owm/wallets/$(hostname -s) \
-                            -pwd paM9Ndfy264HZEZn9ldkA4zra801qqen \
+                            -pwd ******************************** \
                             -pkcs12file ${TMP_DIR}/$(hostname -s).p12\
                             -pkcs12pwd ********************************
 
