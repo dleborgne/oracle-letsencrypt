@@ -1,5 +1,5 @@
 # oracle-letsencrypt
-Using Let's Encrypt to get and renew a TLS certificate used to encrypt the TNS traffic between Oracle Database client and server and HTTPS traffic between browser and Oracle Enterprise Manager Database Express. Tested with Oracle Database 12c R2, 18c and 19c.
+Using Let's Encrypt to get and renew a TLS certificate to encrypt the TNS traffic between Oracle Database client and server and HTTPS traffic between browser and Oracle Enterprise Manager Database Express. Tested with Oracle Database 12c R2, 18c and 19c.
 
 Certs are obtained with Certbot. The deploy-to-oracledb.sh renewal hook is then triggered to scp PEM files to the Oracle host, and remotely launch the Oracle Wallet creation script.
 
