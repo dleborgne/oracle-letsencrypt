@@ -8,3 +8,6 @@ This script is a Certbot renew hook. It copies PEM files to the Oracle host, and
 
 ## renew-wallet.sh
 This script takes private key, certificate chain and certificate from PEM files in /home/oracle/tls and create a new Oracle wallet in  ${ORACLE_HOME}/owm/wallets. The wallet name is named after the host.
+
+##create-oracle-client-wallet.bat
+This DOS script creates an Oracle client wallet containing Let's Encrypt's root certificate. It requires a *full* Oracle Client as the orapki command is unavailable in Oracle Instant Client
