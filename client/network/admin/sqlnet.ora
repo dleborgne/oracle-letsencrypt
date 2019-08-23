@@ -1,0 +1,12 @@
+SSL_CLIENT_AUTHENTICATION=FALSE
+# Server DN should match, the following directive should not be used
+SSL_SERVER_DN_MATCH=OFF
+
+
+WALLET_LOCATION =
+  (SOURCE =
+    (METHOD = FILE)
+    (METHOD_DATA =
+      (DIRECTORY = C:\oracle\configuration\oracle-client-wallet)
+    )
+  )
